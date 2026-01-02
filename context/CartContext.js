@@ -15,7 +15,7 @@ export const CartProvider = ({ children }) => {
           item.id === product.id ? { ...item, qty: item.qty + 1 } : item
         )
       );
-    } else {
+    } else {  
       setCart([...cart, { ...product, qty: 1 }]);
     }
   };
